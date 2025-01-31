@@ -1,0 +1,213 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  :root {
+    --color-primary: #ffa500;
+    --color-dark: #232323;
+    --color-light: #eaeaea;
+    --color-white: #fff;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  a{
+    color:var(--color-primary);
+  }
+  header{
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    padding: 1.5rem 0;
+  }
+  nav ul{
+    list-style: none;
+    text-align: center;
+  }
+  nav li{
+    display: inline;
+    margin: 0 1.5rem;
+  }
+  nav a{
+    text-decoration: none;
+    font-weight: 700;
+  }
+.hero{
+    background-image: url(https://assets-v2.circle.so/vx7kjq39bl4rhaz7gui5n9lueufl);
+    background-size: cover;
+    color: var(--color-white);
+    min-height: 75vh;
+    padding: 10rem 0;
+    text-align: center;
+}
+.hero h1{
+    font-size: 4rem;
+    font-weight: 100;
+}
+.hero p{
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+.cta-button{
+    background-color: var(--color-primary);
+    border-radius: .5rem;
+    color: var(--color-dark);
+    display: inline-block;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    padding: .75rem 1.5rem;
+    text-decoration: none;
+}
+section:not(#home){
+    padding: 4rem;
+    text-align: center;
+}
+h2{
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+
+}
+p{
+    font-size: 1.25rem;
+}
+.menu-list{
+    list-style: none;
+
+}
+.menu-list > li{
+    background-color: var(--color-light);
+    border-radius: .5rem;
+    box-shadow: 0 4px 12px -4px rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    margin: 1.5rem;
+    height: 28rem;
+    width: 28rem;
+    text-align: left;
+
+}
+.menu-list img{
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    object-fit: cover;
+    width: 100%;
+}
+.menu-list h3, .menu-list p{
+    padding: 1rem 1.25rem 0;
+}
+
+#about{
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.8) 100%
+        ),
+        url("https://assets-v2.circle.so/kky0tfxrvxzps0mbr9lh7jv8j3ep");
+        background-size: cover;
+        background-position:center;
+        color: var(--color-white);
+}
+address {
+    margin: 2rem 0;
+    font-style: italic;
+  }
+  
+  address > * {
+    display: inline-block;
+    margin: 1.5rem;
+    text-align: left;
+  }
+  
+  footer {
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    padding: 2rem;
+    text-align: center;
+  }
+/* Responsividade */
+@media (max-width: 1024px) {
+  .hero {
+      padding: 6rem 2rem;
+      min-height: 50vh;
+  }
+
+  .hero h1 {
+      font-size: 3rem;
+  }
+
+  .hero p {
+      font-size: 1.25rem;
+  }
+
+  .cta-button {
+      font-size: 1rem;
+      padding: 0.5rem 1rem;
+  }
+
+  section {
+      padding: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  nav li {
+      display: block;
+      margin: 1rem 0;
+  }
+
+  .hero {
+      padding: 4rem 1rem;
+      min-height: 40vh;
+  }
+
+  .hero h1 {
+      font-size: 2.5rem;
+  }
+
+  .hero p {
+      font-size: 1rem;
+  }
+
+  .menu-list > li {
+      width: 100%;
+      height: auto;
+  }
+}
+@media (max-width: 480px) {
+  .hero {
+    padding: 3rem 1rem;
+  }
+  .hero h1 {
+    font-size: 2rem;
+}
+
+.hero p {
+font-size: 0.9rem;
+}
+
+.cta-button {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+.menu-list {
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-list > li {
+    width: 90%;
+}
+footer {
+    padding: 1.5rem;
+  }
+}

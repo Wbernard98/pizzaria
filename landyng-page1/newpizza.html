@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalize sua Pizza - Pizzaria Alessio's</title>
+    <link rel="stylesheet" href="newpizza.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Cardápio</a></li>
+                <li><a href="newpizza.html">Monte sua Pizza</a></li>  
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Monte sua Pizza</h1>
+        <form id="pizzaform">
+            <label for="tamanho">Escolha o tamanho</label>
+            <select name="tamanho" id="tamanho">
+                <option value="pequena">Pequena</option>
+                <option value="media">Média</option>
+                <option value="Grande">Grande</option>
+            </select>
+            <fieldset>
+                <legend>Escolha até 4 sabores</legend>
+                <input type="checkbox" name="sabores" value="Margherita">Margherita <br>
+                <input type="checkbox" name="sabores" value="Pepperoni">Pepperoni <br>
+                <input type="checkbox" name="sabores" value="Quatro Queijos">Quatro Queijos<br>
+                <input type="checkbox" name="sabores" value="Calabresa">Calabresa <br>
+                <input type="checkbox" name="sabores" value="Vegetariana">Vegetariana <br>
+                <input type="checkbox" name="sabores" value="Frangocomcatupiry">Frango com Catupiry <br>
+                <input type="checkbox" name="sabores" value="Portuguesa">Portuguesa <br>
+                <input type="checkbox" name="sabores" value="Supreme">Supreme <br>
+                <input type="checkbox" name="sabores" value="Tropical">Tropical <br>
+                <input type="checkbox" name="sabores" value="MargheritaEspecial">Margherita Especial <br>
+                <input type="checkbox" name="sabores" value="CarnedeSol">Carne de Sol <br>
+                <input type="checkbox" name="sabores" value="Caprese">Caprese <br>
+
+            </fieldset>
+            <fieldset>
+                <legend>Adicionais:</legend>
+                <input type="checkbox" name="adicionais" value="Bacon">Bacon <br>
+                <input type="checkbox" name="adicionais" value="Catupiry">Catupiry <br>
+                <input type="checkbox" name="adicionais" value="Calabresa">Calabresa <br>
+                <input type="checkbox" name="adicionais" value="Cheddar">Cheddar <br>
+                
+            </fieldset>
+            <fieldset>
+                <legend>Borda Recheada (Escolha uma Opção)</legend>
+                <input type="radio" name="borda" value="catupiry">Catupiry <br>
+                <input type="radio" name="borda" value="Cheddar">Cheddar <br>
+                <input type="radio" name="borda" value="Chocolate">Chocolate Preto <br>
+            </fieldset>
+            <p><strong>Preço Estimado:</strong>R$ <span id="preco">0.00</span></p>
+            <button type="submit">Adicionar ao Pedido</button>
+        </form>
+        
+    </main>
+    <script src="pizza.js"></script>
+</body>
+</html>

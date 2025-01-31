@@ -1,0 +1,134 @@
+/* Reset global */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-primary: #ffa500;
+    --color-dark: #232323;
+    --color-light: #eaeaea;
+    --color-white: #fff;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--color-light);
+    color: var(--color-dark);
+    background-image: url(https://images.pexels.com/photos/29807156/pexels-photo-29807156/free-photo-of-deliciosas-pizzas-italianas-com-coberturas-gourmet.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+}
+nav ul{
+    list-style: none;
+}
+nav li{
+    display: inline;
+    margin: 0 1.5rem;
+}
+nav a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--color-primary);
+}
+header {
+    background-color: var(--color-dark);
+    padding: 1.5rem 0;
+    text-align: center;
+}
+form{
+    text-align: left;
+
+  }
+main{
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background:var(--color-white);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+}
+h1{
+  font-size: 2rem;
+  margin-block-start: 1.5rem;
+  
+}
+label, legend{
+  font-weight: bold;
+  margin-top: 1rem;
+  display: block;
+
+}
+select,input[type="checkbox"]{
+  margin-top: 0.5rem;
+}
+fieldset{
+  margin: 1rem 0;
+  padding: 1rem;
+  border: 1px solid var(--color-dark);
+  border-radius: 5px;
+}
+
+button{
+  background-color: var(--color-primary);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--color-dark);
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1rem;
+  display: block;
+  width: 100%;
+
+}
+#button:hover{
+    background-color: #ff8c00;
+
+}
+#preco{
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: var(--color-primary);
+}
+
+@media (max-width: 768px){
+  main{
+    width: 90%;
+    padding: 1.5rem;
+  }
+  h1{
+    font-size: 1.75rem;
+  }
+  h1::before, h1::after{
+    font-size: 1.75rem;
+  }
+  button {
+    font-size: 1.25rem;
+    padding: 0.5rem;
+  }
+}
+@media (max-width: 480px) {
+  nav li {
+      display: block;
+      margin: 0.5rem 0;
+  }
+
+  h1 {
+      font-size: 1.5rem;
+  }
+
+  h1::before,
+  h1::after {
+      font-size: 1.5rem;
+  }
+
+  button {
+      font-size: 1rem;
+      padding: 0.5rem;
+  }
+}
